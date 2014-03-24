@@ -24,13 +24,13 @@ git pull --rebase origin master
 echo "Done!"
 
 echo "Add stage"
-git add *
+git add .
 echo "Done!"
 
 echo "Commit"
 read -p "Please input commit message: " c_msg
 echo $c_msg
-git commit -m $c_msg
+git commit -m "$c_msg"
 echo "Done!"
 
 # echo "Push origin master"
