@@ -33,6 +33,6 @@ echo $c_msg
 git commit -m "$c_msg"
 echo "Done!"
 
-# echo "Push origin master"
-# git push origin master
-# echo "Done!"
+echo "Push origin master"
+git push origin master
+echo "Done!"
