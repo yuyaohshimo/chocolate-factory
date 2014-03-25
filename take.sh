@@ -11,14 +11,10 @@ echo "Pull from origin master"
 git pull --rebase origin master
 echo "Done!"
 
-classes="$p_path/Classes"
-
-echo "Copy Classes"
-cp -rf Classes $classes
+echo "Sync Classes"
+rsync -avr --delete Classes $p_path
 echo "Done!"
 
-resources="$p_path/Resources"
-
-echo "Copy Resources"
-cp -rf Resources $resources
+echo "Sync Resources"
+rsync -avr --delete Resources $p_path
 echo "Done!"

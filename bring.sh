@@ -9,14 +9,14 @@ fi
 
 classes="$p_path/Classes"
 
-echo "Copy Classes"
-cp -rf $classes Classes
+echo "Sync Classes"
+rsync -avr --delete $classes .
 echo "Done!"
 
 resources="$p_path/Resources"
 
-echo "Copy Resources"
-cp -rf $resources Resources
+echo "Sync Resources"
+rsync -avr --delete $resources .
 echo "Done!"
 
 git status
