@@ -23,6 +23,7 @@ git status
 echo "Add stage"
 git add --all .
 echo "Done!"
+git status
 
 echo "Commit"
 read -p "Please input commit message: " c_msg
