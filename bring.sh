@@ -19,18 +19,18 @@ echo "Copy Resources"
 cp -rf $resources Resources
 echo "Done!"
 
-echo "Pull origin master"
-git pull --rebase origin master
-echo "Done!"
-
+git status
 echo "Add stage"
 git add .
 echo "Done!"
 
 echo "Commit"
 read -p "Please input commit message: " c_msg
-echo $c_msg
 git commit -m "$c_msg"
+echo "Done!"
+
+echo "Pull origin master"
+git pull --rebase origin master
 echo "Done!"
 
 echo "Push origin master"
