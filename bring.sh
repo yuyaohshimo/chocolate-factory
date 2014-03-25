@@ -21,7 +21,7 @@ echo "Done!"
 
 git status
 echo "Add stage"
-git add .
+git add --all .
 echo "Done!"
 
 echo "Commit"
